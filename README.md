@@ -2,6 +2,10 @@ CoyoteCache
 ===========
 Is part of Cugar (https://github.com/renespeck/Cugar).
 
+## VM arguments
+### for memory measurer
+-javaagent:lib/object-explorer.jar
+
 ## How to cite
 ```Tex
 @incollection{
@@ -15,3 +19,7 @@ Is part of Cugar (https://github.com/renespeck/Cugar).
   author={Speck, René and Ngonga Ngomo, Axel-Cyrille}
 }
 ```
+
+##Changelog
+### [0.0.1]
+Adds memory measure (https://code.google.com/p/memory-measurer/)
