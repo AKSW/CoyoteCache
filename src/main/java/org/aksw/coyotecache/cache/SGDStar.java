@@ -5,7 +5,8 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map.Entry;
-import java.util.Set;
+
+import objectexplorer.MemoryMeasurer;
 
 /**
  * @author rspeck
@@ -35,11 +36,12 @@ public class SGDStar extends AbstractGD {
 
         if (m_accessSeg.size() > SEGMENT_SIZE) {
             Object o = m_accessSeg.remove(0);
-
+            Long mem = MemoryMeasurer.measureBytes(((Element) o).getObject());
             m_accessMap.put(o, new GDStarElement(
                     m_cacheAge,
                     ((Element) o).getCost(),
-                    Double.valueOf(((Set) ((Element) o).getObject()).size())
+                    mem.doubleValue()
+                    // Double.valueOf(((Set) ((Element) o).getObject()).size())
                     )
                     );
         }
@@ -75,10 +77,12 @@ public class SGDStar extends AbstractGD {
 
     @Override
     protected void putAccess(Object key) {
+        Long mem = MemoryMeasurer.measureBytes(((Element) key).getObject());
         GDStarElement element = new GDStarElement(
                 m_cacheAge,
                 ((Element) key).getCost(),
-                Double.valueOf(((Set) ((Element) key).getObject()).size())
+                mem.doubleValue()
+                // Double.valueOf(((Set) ((Element) key).getObject()).size())
                 );
         m_accessMap.put(key, element);
     }
