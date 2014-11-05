@@ -10,14 +10,14 @@ import org.apache.log4j.Logger;
  * @author rspeck
  * 
  */
-public class CacheTest_Lfuda extends TestCase {
+public class Test_Lfuda extends TestCase {
     /** logger */
-    public static Logger log4j = Logger.getLogger(CacheTest_Lfuda.class);
+    public static Logger log4j = Logger.getLogger(Test_Lfuda.class);
 
     public void testSize() {
         log4j.debug("Start test ...");
 
-        CacheTest.testSize(new LfuDA(10, 1));
+        TestCache.sizeTest(new LfuDA(10, 1));
     }
 
     // test one

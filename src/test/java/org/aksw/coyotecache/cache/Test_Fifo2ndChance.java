@@ -8,15 +8,15 @@ import junit.framework.TestCase;
 
 import org.apache.log4j.Logger;
 
-public class CacheTest_Fifo2ndChance extends TestCase {
+public class Test_Fifo2ndChance extends TestCase {
 
     /** logger */
-    public static Logger log4j = Logger.getLogger(CacheTest_Fifo2ndChance.class);
+    public static Logger log4j = Logger.getLogger(Test_Fifo2ndChance.class);
 
     public void testSize() {
         log4j.debug("Start test ...");
 
-        CacheTest.testSize(new Fifo2ndChance(10, 1));
+        TestCache.sizeTest(new Fifo2ndChance(10, 1));
     }
 
     public void testFifo2ndChanceInteger() {

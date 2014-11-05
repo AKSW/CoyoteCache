@@ -11,10 +11,10 @@ import junit.framework.TestCase;
 
 import org.apache.log4j.Logger;
 
-public class SeedTest_InitialOrder extends TestCase {
+public class Test_InitialOrder extends TestCase {
 
     /** logger */
-    public static Logger log4j = Logger.getLogger(SeedTest_InitialOrder.class);
+    public static Logger log4j = Logger.getLogger(Test_InitialOrder.class);
 
     public void testInitialOrder() {
 

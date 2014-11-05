@@ -4,10 +4,10 @@ import junit.framework.TestCase;
 
 import org.apache.log4j.Logger;
 
-public class SeedTest_RandomOrder extends TestCase {
+public class Test_RandomOrder extends TestCase {
 
     /** logger */
-    public static Logger log4j = Logger.getLogger(SeedTest_RandomOrder.class);
+    public static Logger log4j = Logger.getLogger(Test_RandomOrder.class);
 
     public void testRandomOrder() {
         log4j.debug("Start test ...");

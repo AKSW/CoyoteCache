@@ -8,9 +8,9 @@ import junit.framework.TestCase;
 
 import org.apache.log4j.Logger;
 
-public class SeedTest_FifoOrder extends TestCase {
+public class Test_FifoOrder extends TestCase {
     /** logger */
-    public static Logger log4j = Logger.getLogger(SeedTest_FifoOrder.class);
+    public static Logger log4j = Logger.getLogger(Test_FifoOrder.class);
 
     public void testFifoOrder() {
         log4j.debug("Start test ...");

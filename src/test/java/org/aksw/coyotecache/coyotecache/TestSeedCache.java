@@ -9,14 +9,14 @@ import org.aksw.coyotecache.cache.Fifo;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
-public class SeedCacheTest extends TestCase {
+public class TestSeedCache extends TestCase {
 
     static {
         PropertyConfigurator.configure("Log4j.properties");
     }
 
     /** logger */
-    public static Logger log4j = Logger.getLogger(SeedCacheTest.class);
+    public static Logger log4j = Logger.getLogger(TestSeedCache.class);
 
     public void test() {
         log4j.debug("Start test ...");

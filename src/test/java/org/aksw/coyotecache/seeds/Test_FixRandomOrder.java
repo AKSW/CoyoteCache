@@ -7,9 +7,9 @@ import junit.framework.TestCase;
 
 import org.apache.log4j.Logger;
 
-public class SeedTest_FixRandomOrder extends TestCase {
+public class Test_FixRandomOrder extends TestCase {
     /** logger */
-    public static Logger log4j = Logger.getLogger(SeedTest_FixRandomOrder.class);
+    public static Logger log4j = Logger.getLogger(Test_FixRandomOrder.class);
 
     /**
      * Add seeds and compare seed order of two instances of FixRandomOrder.

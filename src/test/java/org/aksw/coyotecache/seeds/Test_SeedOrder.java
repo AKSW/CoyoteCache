@@ -7,9 +7,9 @@ import junit.framework.TestCase;
 
 import org.apache.log4j.Logger;
 
-public class SeedTest_SeedOrder extends TestCase {
+public class Test_SeedOrder extends TestCase {
     /** logger */
-    public static Logger log4j = Logger.getLogger(SeedTest_SeedOrder.class);
+    public static Logger log4j = Logger.getLogger(Test_SeedOrder.class);
 
     private void test(SeedOrderInterface seedOrder) {
         log4j.debug("Start test ...");

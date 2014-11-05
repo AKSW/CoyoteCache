@@ -4,14 +4,14 @@ import junit.framework.TestCase;
 
 import org.apache.log4j.Logger;
 
-public class CacheTest_SLru extends TestCase {
+public class Test_SLru extends TestCase {
     /** logger */
-    public static Logger log4j = Logger.getLogger(CacheTest_SLru.class);
+    public static Logger log4j = Logger.getLogger(Test_SLru.class);
 
     public void testSize() {
         log4j.debug("Start test ...");
 
-        CacheTest.testSize(new SLru(10, 1));
+        TestCache.sizeTest(new SLru(10, 1));
     }
 
     public void test() {

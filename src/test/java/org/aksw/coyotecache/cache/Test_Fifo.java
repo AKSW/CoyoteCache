@@ -8,14 +8,14 @@ import junit.framework.TestCase;
 
 import org.apache.log4j.Logger;
 
-public class CacheTest_Fifo extends TestCase {
+public class Test_Fifo extends TestCase {
     /** logger */
-    public static Logger log4j = Logger.getLogger(CacheTest_Fifo.class);
+    public static Logger log4j = Logger.getLogger(Test_Fifo.class);
 
     public void testSize() {
         log4j.debug("Start test ...");
 
-        CacheTest.testSize(new Fifo(10, 1));
+        TestCache.sizeTest(new Fifo(10, 1));
     }
 
     public void testFifoInteger() {

@@ -8,10 +8,10 @@ import junit.framework.TestCase;
 
 import org.apache.log4j.Logger;
 
-public class CacheTest_CacheVsMap extends TestCase {
+public class Test_CacheVsMap extends TestCase {
 
     /** logger */
-    public static Logger log4j = Logger.getLogger(CacheTest_CacheVsMap.class);
+    public static Logger log4j = Logger.getLogger(Test_CacheVsMap.class);
 
     public void testCacheVsMap() {
         log4j.debug("Start test ...");

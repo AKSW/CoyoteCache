@@ -8,20 +8,20 @@ import junit.framework.TestCase;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
-public class CacheTest_Cost extends TestCase {
+public class Test_Cost extends TestCase {
     /** logger */
 
     static {
         PropertyConfigurator.configure("Log4j.properties");
     }
-    public static Logger log4j = Logger.getLogger(CacheTest_Cost.class);
+    public static Logger log4j = Logger.getLogger(Test_Cost.class);
 
     public void testSize() {
         log4j.debug("Start test ...");
-        CacheTest.testSize(new Cost(10, 1));
+        TestCache.sizeTest(new Cost(10, 1));
     }
 
-    public void testCostElement() {
+    public void testCostElementTest() {
         log4j.debug("Start test ...");
         int size = 10;
         CacheInterface cache = new Cost(size, 1);
